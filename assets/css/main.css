@@ -203,26 +203,17 @@ a:hover {
 }
 
 .nav {
-<<<<<<< HEAD
     background: #f5f5f5;
-=======
-    background: #ffb555;
->>>>>>> 83b1e762d57ca68568e08d5e86fb7d759ad07c33
 }
-
 .menu-container {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     width: 100%;
     margin: 0 auto;
-<<<<<<< HEAD
-    background: #f5f5f5;
-=======
-    background: #ffb555;
->>>>>>> 83b1e762d57ca68568e08d5e86fb7d759ad07c33
-}
 
+    background: #f5f5f5;
+}
 .menu-mobile {
     display: none;
     padding: 20px;

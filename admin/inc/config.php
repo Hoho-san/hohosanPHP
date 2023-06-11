@@ -9,11 +9,7 @@ date_default_timezone_set('Asia/Manila');
 $dbhost = 'localhost';
 
 // Database Name
-<<<<<<< HEAD
 $dbname = 'hohosan';
-=======
-$dbname = 'aicomdatabase';
->>>>>>> 83b1e762d57ca68568e08d5e86fb7d759ad07c33
 
 // Database Username
 $dbuser = 'root';

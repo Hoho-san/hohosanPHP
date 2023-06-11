@@ -32,7 +32,6 @@
                 <img style="width: 425px; height:300px;" src="assets/img/computer-science.jpg" alt="">
             </div>
         </div>
-<<<<<<< HEAD
         <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; margin-bottom:75px;">
             <div>
                 <img style="width: 415px; height:300px;" src="assets/img/meme.jpg" alt="">
@@ -51,9 +50,6 @@
             </div>
 
         </div>
-=======
-       
->>>>>>> 83b1e762d57ca68568e08d5e86fb7d759ad07c33
     </div>
 </div>
 

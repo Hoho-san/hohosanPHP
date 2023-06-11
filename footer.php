@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <section class="home-newsletter">
     <div class="container">
         <div class="row">
@@ -59,8 +59,7 @@
             </div>
         </div>
 </section>
-=======
->>>>>>> 83b1e762d57ca68568e08d5e86fb7d759ad07c33
+
 
 
 
@@ -70,12 +69,9 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 copyright">
-<<<<<<< HEAD
-                <p>&copy; <?php echo date('Y'); ?> Copyright - Developed By <a href="https://github.com/Hoho-san" target="_blank" style="text-decoration: none; font-weight:bold;">Hoho-san</a> </p>
-=======
-                <p>&copy; <?php echo date('Y'); ?> Copyright Redstar - Developed By Andengan </p>
 
->>>>>>> 83b1e762d57ca68568e08d5e86fb7d759ad07c33
+                <p>&copy; <?php echo date('Y'); ?> Copyright - Developed By <a href="https://github.com/Hoho-san" target="_blank" style="text-decoration: none; font-weight:bold;">Hoho-san</a> </p>
+
             </div>
         </div>
     </div>

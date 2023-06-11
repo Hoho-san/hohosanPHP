@@ -13,7 +13,6 @@
                     <div class="title_name">
                         Hello, I am a <span class="typed"></span>
                     </div>
-
                 </h1>
                 <div class="logo">
                     <?php
@@ -39,4 +38,3 @@
             </div>
         </section>
 <?php require_once('footer.php'); ?>
-
