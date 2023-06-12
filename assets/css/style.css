@@ -299,10 +299,10 @@ li {
 
 .certheader {
     color: white;
-    font-size: 4rem;
+    font-size: 3rem;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .certificate {
@@ -328,6 +328,11 @@ li {
 .certificate .myCertificate .certificate_title img {
     border-radius: 30px;
 }
+
+.certificate .myCertificate .certificate_title:hover img {
+    transform: scale(1.1);
+}
+
 .certificate .myCertificate .certificate_title {
     font-size: 1.2rem;
 }
@@ -444,6 +449,7 @@ li {
 
 .upload-certificate {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 20px;

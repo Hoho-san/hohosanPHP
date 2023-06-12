@@ -38,26 +38,20 @@ if(isset($_POST['form1'])) {
         move_uploaded_file( $path_tmp, './assets/uploads/'.$final_name );
 		$statement = $pdo->prepare("INSERT INTO tbl_certificate (title,photo) VALUES (?,?)");
 		$statement->execute(array($_POST['title'],$final_name));
-		$success_message = 'certificate is added successfully!';
+		echo "<script>alert('Certificate is added successfully!!')</script>";
+        echo "<script>window.location.href = 'certificate.php';</script>";
+
+
 		unset($_POST['title']);
 	}
 }
 ?>
-<!-- 
-<section class="content-header">
-	<div class="content-header-left">
-		<h1>Add certificate</h1>
-	</div>
-	<div class="content-header-right">
-		<a href="certificate.php" class="btn btn-primary btn-sm">View All</a>
-	</div>
-</section> -->
 
   <div id="particles-js"></div>
 <section  class="content">
-
+ 
 	<div class="upload-certificate">
-
+        <h1 class="certheader" style="padding-bottom: 4rem;"> Add Certificate</h1>    
 	    <div class="form-container">
 		    <form class="certificate-form" action="" method="post" enctype="multipart/form-data">
 			    <div class="form-group">
@@ -68,10 +62,12 @@ if(isset($_POST['form1'])) {
 					    </div>
 				    </div>
 			    </div>
-			
+
+                <a class="fa-solid fa-cloud-arrow-up"></a>
+
 			    <div class="form-group">
 				    <div class="input-group">
-					    <label for="photo" class="label">Photo:</label>
+					    <label for="photo" class="label" >Photo:</label>
 					    <div class="input-wrapper" style="padding-top: 5px">
 					    	<input type="file" name="photo" class="file-input">(Only jpg, jpeg, gif and png are allowed)
 					    </div>
