@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 11, 2023 at 12:31 PM
+-- Generation Time: Jun 12, 2023 at 04:02 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -65,12 +65,12 @@ CREATE TABLE `tbl_social` (
 --
 
 INSERT INTO `tbl_social` (`social_id`, `social_name`, `social_url`, `social_icon`) VALUES
-(1, 'Facebook', 'https://www.facebook.com/hohosan24', 'fab fa-facebook-f'),
-(2, 'Twitter', 'https://twitter.com/Hoho_san24', 'fab fa-twitter'),
-(3, 'LinkedIn', 'https://www.linkedin.com/in/jojojavier/', 'fab fa-linkedin'),
-(6, 'YouTube', 'https://youtube.com/@hoho-san1629', 'fab fa-youtube'),
-(7, 'Instagram', 'https://www.instagram.com/hoho.san_/', 'fab fa-instagram'),
-(17, 'Github', 'https://github.com/Hoho-san', 'fab fa-github');
+(1, 'Facebook', 'https://www.facebook.com/hohosan24', 'fa-brands fa-facebook-f'),
+(2, 'Twitter', 'https://twitter.com/Hoho_san24', 'fa-brands fa-twitter'),
+(3, 'LinkedIn', 'https://www.linkedin.com/in/jojojavier/', 'fa-brands fa-linkedin'),
+(6, 'YouTube', 'https://youtube.com/@hoho-san1629', 'fa-brands fa-youtube'),
+(7, 'Instagram', 'https://www.instagram.com/hoho.san_/', 'fa-brands fa-instagram'),
+(17, 'Github', 'https://github.com/Hoho-san', 'fa-brands fa-github');
 
 -- --------------------------------------------------------
 
@@ -91,7 +91,12 @@ CREATE TABLE `tbl_subscriber` (
 --
 
 INSERT INTO `tbl_subscriber` (`subs_id`, `subs_email`, `subs_date`, `subs_date_time`, `subs_hash`) VALUES
-(18, 'dgsg', '2023-06-11', '2023-06-11 18:25:20', '2d357063d347f4af2356ce034b699f67');
+(18, 'dgsg', '2023-06-11', '2023-06-11 18:25:20', '2d357063d347f4af2356ce034b699f67'),
+(19, 'gdsg', '2023-06-11', '2023-06-11 19:14:02', 'aff46aa12051cf798e946af190d0aa08'),
+(20, 'https://www.facebook.com/fasfas', '2023-06-12', '2023-06-12 20:34:12', '27f1ead40a83220ddd47d8ded109c736'),
+(21, 'xfgzxfg', '2023-06-12', '2023-06-12 15:36:23', '4fd4ee60605bb33064f9cfb6d58d01bb'),
+(22, 'gsdgsdg', '2023-06-12', '2023-06-12 15:36:49', '1a213cb146a346d91e6494e62ce8a2c6'),
+(23, 'fasf', '2023-06-12', '2023-06-12 15:59:50', '71615434dbe4c02c892cd678e66e9cc1');
 
 -- --------------------------------------------------------
 
@@ -153,7 +158,7 @@ ALTER TABLE `tbl_user`
 -- AUTO_INCREMENT for table `tbl_certificate`
 --
 ALTER TABLE `tbl_certificate`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
 -- AUTO_INCREMENT for table `tbl_social`
@@ -165,7 +170,7 @@ ALTER TABLE `tbl_social`
 -- AUTO_INCREMENT for table `tbl_subscriber`
 --
 ALTER TABLE `tbl_subscriber`
-  MODIFY `subs_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `subs_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT for table `tbl_user`

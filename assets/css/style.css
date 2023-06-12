@@ -471,6 +471,17 @@ li {
     margin-bottom: 10px;
 }
 
+.certificate-form .cloud {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.certificate-form .fa-solid.fa-image {
+    font-size: 7rem;
+    margin-right: 10px;
+}
+
 .certificate-form .input-group {
     display: flex;
     align-items: center;

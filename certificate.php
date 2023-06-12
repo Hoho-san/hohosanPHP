@@ -8,21 +8,24 @@
 </div>
 
 <section id="certificate" class="certificate" >    
-        <?php
-        $statement = $pdo->prepare("SELECT * FROM tbl_certificate");
-        $statement->execute();
-        $result = $statement->fetchAll(PDO::FETCH_ASSOC);
-        foreach ($result as $row) {
-        ?>
+    <?php
+        $query = "SELECT * FROM tbl_certificate";
+        $result = $conn->query($query);
+        if ($result->num_rows > 0) {
+            while ($row = $result->fetch_assoc()) {
+            ?>
             <div class="myCertificate">
                 <div class="certificate_title">
                     <h1><?php echo $row['title']; ?></h1>
-                    <img class="cert_image" src="assets/uploads/<?php echo $row['photo']; ?>"  alt="<?php echo $row['title']; ?>"/>
+                    <img class="cert_image" src="assets/uploads/<?php echo $row['photo']; ?>" alt="<?php echo $row['title']; ?>"/>
                 </div>
             </div>
-        <?php
+            
+        <?php }
+        }else {
+            echo "No certificates found.";
         }
-        ?>
+    ?> 
     <div class="popup-image">
         <span>&times;</span>
         <img alt="certificate"/>

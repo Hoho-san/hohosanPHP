@@ -16,21 +16,20 @@
                 </h1>
                 <div class="logo">
                     <?php
-                            $statement = $pdo->prepare("SELECT * FROM tbl_social");
-                            $statement->execute();
-                            $result = $statement->fetchAll(PDO::FETCH_ASSOC);
-                            foreach ($result as $row) {
-                            ?>
-                                <?php if ($row['social_url'] != '') : ?>
+                        $query = "SELECT * FROM tbl_social";
+                        $result = $conn->query($query);
+                        if ($result->num_rows > 0) {
+                            while ($row = $result->fetch_assoc()) {
+                                if ($row['social_url'] != '') {
+                                    ?>
                                     <a href="<?php echo $row['social_url']; ?>" target="_blank" class="<?php echo $row['social_icon']; ?>"></a>
-                                <?php endif; ?>
-                            <?php
+                                <?php
+                                }
                             }
-                            ?>
+                        }
+                    ?>   
                 </div>
             </div>
-            
-
             <div class="image">
                 <img
                     src="assets/img/IMG_20221210_204646_494-02-01-removebg.png"

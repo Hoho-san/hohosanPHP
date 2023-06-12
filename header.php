@@ -2,14 +2,7 @@
 <?php
 ob_start();
 session_start();
-include("admin/inc/config.php");
-include("admin/inc/functions.php");
-include("admin/inc/CSRF_Protect.php");
-$csrf = new CSRF_Protect();
-$error_message = '';
-$success_message = '';
-$error_message1 = '';
-$success_message1 = '';
+include("config/conn.php");
 
 ?>
 <!DOCTYPE html>
@@ -25,7 +18,6 @@ $success_message1 = '';
 
     <link rel="icon" href="assets/img/logo.jpg">
 
-
     <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
@@ -35,9 +27,6 @@ $success_message1 = '';
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
 
     <title>Hoho-san</title>
-    <meta name="keywords" content="<?php echo $meta_keyword_home; ?>">
-    <meta name="description" content="<?php echo $meta_description_home; ?>">
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>

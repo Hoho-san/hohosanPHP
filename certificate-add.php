@@ -24,27 +24,34 @@ if(isset($_POST['form1'])) {
         $error_message .= 'You must have to select a photo<br>';
     }
 
-	if($valid == 1) {
+if ($valid == 1) {
+    // Getting auto increment id
+    $query = "SHOW TABLE STATUS LIKE 'tbl_certificate'";
+    $result = $conn->query($query);
+    if ($result->num_rows > 0) {
+        $row = $result->fetch_assoc();
+        $ai_id = $row['Auto_increment'];
+    }
 
-		// getting auto increment id
-		$statement = $pdo->prepare("SHOW TABLE STATUS LIKE 'tbl_certificate'");
-		$statement->execute();
-		$result = $statement->fetchAll();
-		foreach($result as $row) {
-			$ai_id=$row[10];
-		}
+    $final_name = 'certificate-' . $ai_id . '.' . $ext;
+    move_uploaded_file($path_tmp, './assets/uploads/' . $final_name);
 
-		$final_name = 'certificate-'.$ai_id.'.'.$ext;
-        move_uploaded_file( $path_tmp, './assets/uploads/'.$final_name );
-		$statement = $pdo->prepare("INSERT INTO tbl_certificate (title,photo) VALUES (?,?)");
-		$statement->execute(array($_POST['title'],$final_name));
-		echo "<script>alert('Certificate is added successfully!!')</script>";
+    $title = $_POST['title'];
+    $photo = $final_name;
+    $query = "INSERT INTO tbl_certificate (title, photo) VALUES ('$title', '$photo')";
+    if ($conn->query($query) === true) {
+        echo "<script>alert('Certificate is added successfully!!')</script>";
         echo "<script>window.location.href = 'certificate.php';</script>";
+    } else {
+        echo "Error: " . $query . "<br>" . $conn->error;
+    }
 
-
-		unset($_POST['title']);
-	}
+    unset($_POST['title']);
+} else {
+    echo "<script>alert('Title and images cannot be empty')</script>";
 }
+}
+
 ?>
 
   <div id="particles-js"></div>
@@ -63,7 +70,9 @@ if(isset($_POST['form1'])) {
 				    </div>
 			    </div>
 
-                <a class="fa-solid fa-cloud-arrow-up"></a>
+                <div class="cloud">
+                    <i class="fa-solid fa-image"></i>
+                </div>
 
 			    <div class="form-group">
 				    <div class="input-group">
