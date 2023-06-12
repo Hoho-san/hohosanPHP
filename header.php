@@ -30,10 +30,14 @@ $success_message1 = '';
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+
     <title>Hoho-san</title>
     <meta name="keywords" content="<?php echo $meta_keyword_home; ?>">
     <meta name="description" content="<?php echo $meta_description_home; ?>">
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
@@ -43,7 +47,7 @@ $success_message1 = '';
     <div class="nav">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 pl_0 pr_0">
+                <div class="col-md-14 pl_0 pr_0">
                     <div class="menu-container">
                         <div class="menu">
                             <ul>

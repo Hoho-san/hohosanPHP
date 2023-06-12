@@ -1,6 +1,13 @@
 <?php require_once('header.php'); ?>
- <h1 class="certheader">My Certificates</h1>
- <section id="certificate" class="certificate" >    
+
+
+ <div id="particles-js"></div>
+<div class="navcert">
+    <h1 class="certheader">My Certificates</h1>
+    <a class="addcert" href="certificate-add.php"> Add Certificate</a>
+</div>
+
+<section id="certificate" class="certificate" >    
         <?php
         $statement = $pdo->prepare("SELECT * FROM tbl_certificate");
         $statement->execute();

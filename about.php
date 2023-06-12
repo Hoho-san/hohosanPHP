@@ -1,12 +1,13 @@
 <?php require_once('header.php'); ?>
-
+ 
 <div class="page-banner">
     <div class="inner">
-        <h1 style="color: black;">About Us</h1>
+        <h1 style="color: white; font-size: 4rem;">About Me</h1>
     </div>
 </div>
 
 <div class="page">
+  
     <div class="container">
         <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; margin-bottom:75px;">
             <div>
