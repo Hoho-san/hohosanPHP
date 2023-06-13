@@ -9,7 +9,7 @@ require_once('header.php');
  <div id="particles-js"></div>
 <div class="navcert">
     <h1 class="certheader">My Certificates</h1>
-    <a class="addcert" href="certificate-add.php"> Add Certificate</a>
+    <a class="addcert fa-solid fa-file-circle-plus" href="certificate-add.php"> Add Certificate</a>
 </div>
 
 <section id="certificate" class="certificate" >    

@@ -1,12 +1,8 @@
-
-
 <div class="footer-bottom">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 copyright">
-
-                <p>&copy; <?php echo date('Y'); ?> Copyright - Developed By <a href="https://github.com/Hoho-san" target="_blank" style="text-decoration: none; font-weight:bold;">Hoho-san</a> </p>
-
+            <div class="copyright">
+                <p>&copy; <?php echo date('Y'); ?> Copyright - Developed By <a href="https://github.com/Hoho-san" target="_blank" style="text-decoration: none; font-weight:bold; color: red;">Hoho-san</a> </p>
             </div>
         </div>
     </div>

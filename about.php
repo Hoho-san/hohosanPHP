@@ -1,19 +1,15 @@
 <?php require_once('header.php'); ?>
- 
-<div class="page-banner">
-    <div class="inner">
-        <h1 style="color: white; font-size: 4rem;">About Me</h1>
-    </div>
-</div>
 
 <div class="page">
-  
     <div class="container">
-        <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; margin-bottom:75px;">
+        <div style="display: flex; justify-content:center;">
+            <h1 style="color: white; font-size: 4rem; padding: 20px;">About Me</h1>
+        </div>
+        <div class="about-container">
             <div>
                 <img style="width: 425px; height:auto;" src="assets/img/20221210_210825-removebg-preview.png" alt="">
             </div>
-            <div style="width: 50%; font-size: 2rem; padding: 10px; margin: 2rem; display: inline;">
+            <div class="about-text">
                 <p>
                     Hi, my name is Jojo, and I am a programmer student. I am
                     currently pursuing a degree in Computer Science, and I
@@ -22,8 +18,8 @@
                 </p>
             </div>
         </div>
-        <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; margin-bottom:75px;">
-            <div style="width: 50%; font-size: 2rem; padding: 10px; margin: 2rem; display: inline;">
+        <div class="about-container">
+            <div class="about-text">
                 <h1>Education</h1>
                 <p>
                     I am currently enrolled in the Computer Science program at Tanauan Institute, where I have been learning programming languages like PHP, Java, Python, and C++. I have also taken courses on data structures, algorithms, databases, and web development.
@@ -33,11 +29,11 @@
                 <img style="width: 425px; height:300px;" src="assets/img/computer-science.jpg" alt="">
             </div>
         </div>
-        <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; margin-bottom:75px;">
+        <div class="about-container">
             <div>
                 <img style="width: 415px; height:300px;" src="assets/img/meme.jpg" alt="">
             </div>
-            <div style="width: 50%; font-size: 2rem; padding: 10px; margin: 2rem; display: inline;">
+            <div class="about-text">
                 <h1>Skills</h1>
                 <ul>
                     Here are some of the skills that I have acquired through my studies and self-paced learning:

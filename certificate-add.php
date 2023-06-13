@@ -82,18 +82,18 @@ if ($valid == 1) {
 				    <div class="input-group">
 					    <label for="photo" class="label" >Photo:</label>
 					    <div class="input-wrapper" style="padding-top: 5px">
-					    	<input type="file" name="photo" class="file-input">(Only jpg, jpeg, gif and png are allowed)
+					    	<input type="file" name="photo" class="file-input"><br>(Only jpg, jpeg, gif and png are allowed)
 					    </div>
 				    </div>
 			    </div>
 			
 			    <div class="form-group">
 				    <div class="input-group" style="display: flex; justify-content: center;">
-					    <label for="" class="label"></label>
+					   
 					        <div class="button-submit" >
 						        <button type="submit" class="submit-button" name="form1">Submit</button>
 					        </div>
-				        </div>
+				        
 			        </div>
 		        </div>
                 

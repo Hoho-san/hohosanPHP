@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 12, 2023 at 04:02 PM
+-- Generation Time: Jun 13, 2023 at 10:00 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -96,31 +96,9 @@ INSERT INTO `tbl_subscriber` (`subs_id`, `subs_email`, `subs_date`, `subs_date_t
 (20, 'https://www.facebook.com/fasfas', '2023-06-12', '2023-06-12 20:34:12', '27f1ead40a83220ddd47d8ded109c736'),
 (21, 'xfgzxfg', '2023-06-12', '2023-06-12 15:36:23', '4fd4ee60605bb33064f9cfb6d58d01bb'),
 (22, 'gsdgsdg', '2023-06-12', '2023-06-12 15:36:49', '1a213cb146a346d91e6494e62ce8a2c6'),
-(23, 'fasf', '2023-06-12', '2023-06-12 15:59:50', '71615434dbe4c02c892cd678e66e9cc1');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `tbl_user`
---
-
-CREATE TABLE `tbl_user` (
-  `id` int(10) NOT NULL,
-  `full_name` varchar(100) NOT NULL,
-  `email` varchar(255) NOT NULL,
-  `phone` varchar(100) NOT NULL,
-  `password` varchar(255) NOT NULL,
-  `photo` varchar(255) NOT NULL,
-  `role` varchar(30) NOT NULL,
-  `status` varchar(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
-
---
--- Dumping data for table `tbl_user`
---
-
-INSERT INTO `tbl_user` (`id`, `full_name`, `email`, `phone`, `password`, `photo`, `role`, `status`) VALUES
-(1, 'Hoho-san', 'hohosan@mail.com', '0987654321', '21232f297a57a5a743894a0e4a801fc3', 'user1.jpg', 'Admin', 'Active');
+(23, 'fasf', '2023-06-12', '2023-06-12 15:59:50', '71615434dbe4c02c892cd678e66e9cc1'),
+(24, 'asfasf', '2023-06-13', '2023-06-13 07:12:49', '6d97c36585bbdb68bbbfbbd7f7fd8c9e'),
+(25, 'ssss', '2023-06-13', '2023-06-13 07:12:53', '64ef809febc5759fa2e2419bef9b15e7');
 
 --
 -- Indexes for dumped tables
@@ -145,12 +123,6 @@ ALTER TABLE `tbl_subscriber`
   ADD PRIMARY KEY (`subs_id`);
 
 --
--- Indexes for table `tbl_user`
---
-ALTER TABLE `tbl_user`
-  ADD PRIMARY KEY (`id`);
-
---
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -158,7 +130,7 @@ ALTER TABLE `tbl_user`
 -- AUTO_INCREMENT for table `tbl_certificate`
 --
 ALTER TABLE `tbl_certificate`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
 -- AUTO_INCREMENT for table `tbl_social`
@@ -170,13 +142,7 @@ ALTER TABLE `tbl_social`
 -- AUTO_INCREMENT for table `tbl_subscriber`
 --
 ALTER TABLE `tbl_subscriber`
-  MODIFY `subs_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
-
---
--- AUTO_INCREMENT for table `tbl_user`
---
-ALTER TABLE `tbl_user`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `subs_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

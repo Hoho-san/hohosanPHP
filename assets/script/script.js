@@ -8,9 +8,17 @@ document
         };
     });
 
-document.querySelector(".popup-image span").onclick = () => {
-    document.querySelector(".popup-image").style.display = "none";
-};
+document.addEventListener("DOMContentLoaded", () => {
+    const popupImageSpan = document.querySelector(".popup-image span");
+    if (popupImageSpan) {
+        popupImageSpan.addEventListener("click", () => {
+            const popupImage = document.querySelector(".popup-image");
+            if (popupImage) {
+                popupImage.style.display = "none";
+            }
+        });
+    }
+});
 
 function downloadCSV() {
     // Create a link element

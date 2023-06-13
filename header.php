@@ -17,8 +17,7 @@ include("config/conn.php");
     <link rel="icon" href="assets/img/logo.jpg">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/main.css">
+
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/all.css">
@@ -32,20 +31,19 @@ include("config/conn.php");
 
 <body>
     <div class="nav">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-14 pl_0 pr_0">
-                    <div class="menu-container">
-                        <div class="menu">
-                            <ul>
-                                <li><a href="index.php">Home</a></li>
-                                <li><a href="about.php">About Me</a></li>
-                                <li><a href="certificate.php">Certificates</a></li>
-                                <li><a href="contact.php">Contact Me</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+        <div class="menu">
+            <div class="brand">
+                <a href="index.php">
+                    <img src="assets/img/logo.jpg" alt="Logo" />
+                </a>
+            </div>
+            <div class="links">
+                <ul >
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="about.php">About Me</a></li>
+                    <li><a href="certificate.php">Certificates</a></li>
+                    <li><a href="contact.php">Contact Me</a></li>
+                </ul>
             </div>
         </div>
     </div>
