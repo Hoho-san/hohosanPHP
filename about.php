@@ -26,7 +26,7 @@
             <div style="width: 50%; font-size: 2rem; padding: 10px; margin: 2rem; display: inline;">
                 <h1>Education</h1>
                 <p>
-                    I am currently enrolled in the Computer Science program at Tanauan Institute, where I have been learning programming languages like Java, Python, and C++. I have also taken courses on data structures, algorithms, databases, and web development.
+                    I am currently enrolled in the Computer Science program at Tanauan Institute, where I have been learning programming languages like PHP, Java, Python, and C++. I have also taken courses on data structures, algorithms, databases, and web development.
                 </p>
             </div>
             <div>
@@ -40,7 +40,7 @@
             <div style="width: 50%; font-size: 2rem; padding: 10px; margin: 2rem; display: inline;">
                 <h1>Skills</h1>
                 <ul>
-                    Here are some of the skills that I have acquired through my studies and personal projects:
+                    Here are some of the skills that I have acquired through my studies and self-paced learning:
                     <br>
                     <br>
                     <li>Programming languages: PHP, Java, Python, C++, JavaScript</li>

@@ -3,14 +3,13 @@
 <div id="particles-js"></div>
         <section id="home" class="home">
             <div class="phase1">
-                <h1>
-                    Jojo Javier
+                <h1>Jojo Javier
                     <img
                         src="assets/img/ghost-removebg-preview.png"
                         class="Ghost"
                     />
-                    <br>
                     <div class="title_name">
+                        <br>
                         Hello, I am a <span class="typed"></span>
                     </div>
                 </h1>
@@ -28,6 +27,10 @@
                             }
                         }
                     ?>   
+                </div>
+
+                <div class="download">
+                    <button onclick="downloadCSV()"><i class="fa-solid fa-circle-chevron-down">  Download CV</i></button>
                 </div>
             </div>
             <div class="image">

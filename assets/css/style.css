@@ -137,6 +137,7 @@ body {
     justify-items: self-start;
     height: 100%;
     font-size: 5rem;
+    margin: 1.5rem;
 }
 .home h1 .title_name {
     font-size: 3rem;
@@ -186,7 +187,6 @@ body {
     scale: 1.3;
 }
 .home .logo .fa-brands.fa-instagram:hover {
-    background: #d6249f;
     background: radial-gradient(
         circle at 30% 107%,
         #fdf497 0%,
@@ -223,13 +223,33 @@ body {
     transition-delay: 0.001s;
     scale: 1.3;
 }
-
 .home p {
     font-size: 2.1rem;
     padding: 10px;
     margin: 2rem;
     display: inline;
     width: 50%;
+}
+
+.home .download button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    width: auto;
+    font-size: 1.5rem;
+    border: 0.1rem solid rgb(255, 255, 255);
+    margin: 1.5rem;
+    border-radius: 1rem;
+}
+
+.home .download button:hover {
+    box-shadow: 0 0 0 3px rgb(20, 20, 20), 0 0 0 5px #ffffff;
+}
+
+.home .download button i {
+    color: rgb(236, 0, 0);
+    padding: 0 1.5rem 0 1.5rem;
 }
 
 /* About page */
@@ -504,7 +524,7 @@ li {
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 3px;
-    color: #000;
+    color: #241b1b;
 }
 
 .certificate-form .file-input {
@@ -529,4 +549,43 @@ li {
 
 .certificate-form .submit-button:hover {
     background-color: #2cb1ff;
+}
+
+.login-form {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+.account-info {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.register-link {
+    color: blue;
+    text-decoration: none;
+}
+
+.register-link:hover {
+    text-decoration: underline;
 }

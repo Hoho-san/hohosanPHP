@@ -1,7 +1,5 @@
 <!-- This is main configuration File -->
 <?php
-ob_start();
-session_start();
 include("config/conn.php");
 
 ?>
@@ -43,6 +41,7 @@ include("config/conn.php");
                                 <li><a href="index.php">Home</a></li>
                                 <li><a href="about.php">About Me</a></li>
                                 <li><a href="certificate.php">Certificates</a></li>
+                                <li><a href="contact.php">Contact Me</a></li>
                             </ul>
                         </div>
                     </div>

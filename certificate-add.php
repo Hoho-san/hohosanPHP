@@ -1,4 +1,10 @@
-<?php require_once('header.php'); ?>
+<?php require_once('header.php');
+// Check if user is logged in
+
+
+
+?>
+
 
 <?php
 if(isset($_POST['form1'])) {
@@ -6,7 +12,6 @@ if(isset($_POST['form1'])) {
 
 	if(empty($_POST['title'])) {
 		$valid = 0;
-		$error_message .= 'Title can not be empty<br>';
 	}
 
 	$path = $_FILES['photo']['name'];
@@ -17,11 +22,9 @@ if(isset($_POST['form1'])) {
         $file_name = basename( $path, '.' . $ext );
         if( $ext!='jpg' && $ext!='png' && $ext!='jpeg' && $ext!='gif' && $ext!='webp' ) {
             $valid = 0;
-            $error_message .= 'You must have to upload jpg, jpeg, webp , gif or png file<br>';
         }
     } else {
     	$valid = 0;
-        $error_message .= 'You must have to select a photo<br>';
     }
 
 if ($valid == 1) {
@@ -54,7 +57,8 @@ if ($valid == 1) {
 
 ?>
 
-  <div id="particles-js"></div>
+
+<div id="particles-js"></div>
 <section  class="content">
  
 	<div class="upload-certificate">
@@ -98,5 +102,6 @@ if ($valid == 1) {
     </div>
 
 </section>
+
 
 <?php require_once('footer.php'); ?>

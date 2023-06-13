@@ -11,3 +11,22 @@ document
 document.querySelector(".popup-image span").onclick = () => {
     document.querySelector(".popup-image").style.display = "none";
 };
+
+function downloadCSV() {
+    // Create a link element
+    var link = document.createElement("a");
+    link.style.display = "none";
+
+    // Set the CSV file URL
+    link.href = "assets/resume/resume.docx";
+    link.download = "Resume - Jojo Javier.docx";
+
+    // Add the link to the document body
+    document.body.appendChild(link);
+
+    // Trigger the click event
+    link.click();
+
+    // Remove the link from the document body
+    document.body.removeChild(link);
+}
