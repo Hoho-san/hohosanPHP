@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 13, 2023 at 10:00 AM
+-- Generation Time: Jun 13, 2023 at 03:07 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -91,14 +91,7 @@ CREATE TABLE `tbl_subscriber` (
 --
 
 INSERT INTO `tbl_subscriber` (`subs_id`, `subs_email`, `subs_date`, `subs_date_time`, `subs_hash`) VALUES
-(18, 'dgsg', '2023-06-11', '2023-06-11 18:25:20', '2d357063d347f4af2356ce034b699f67'),
-(19, 'gdsg', '2023-06-11', '2023-06-11 19:14:02', 'aff46aa12051cf798e946af190d0aa08'),
-(20, 'https://www.facebook.com/fasfas', '2023-06-12', '2023-06-12 20:34:12', '27f1ead40a83220ddd47d8ded109c736'),
-(21, 'xfgzxfg', '2023-06-12', '2023-06-12 15:36:23', '4fd4ee60605bb33064f9cfb6d58d01bb'),
-(22, 'gsdgsdg', '2023-06-12', '2023-06-12 15:36:49', '1a213cb146a346d91e6494e62ce8a2c6'),
-(23, 'fasf', '2023-06-12', '2023-06-12 15:59:50', '71615434dbe4c02c892cd678e66e9cc1'),
-(24, 'asfasf', '2023-06-13', '2023-06-13 07:12:49', '6d97c36585bbdb68bbbfbbd7f7fd8c9e'),
-(25, 'ssss', '2023-06-13', '2023-06-13 07:12:53', '64ef809febc5759fa2e2419bef9b15e7');
+(27, 'https://www.facebook.com/hohosan24', '2023-06-13', '2023-06-13 13:48:54', '3e09f2c593eecd92a9bb74633076130d');
 
 --
 -- Indexes for dumped tables
@@ -142,7 +135,7 @@ ALTER TABLE `tbl_social`
 -- AUTO_INCREMENT for table `tbl_subscriber`
 --
 ALTER TABLE `tbl_subscriber`
-  MODIFY `subs_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `subs_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
