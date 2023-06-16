@@ -11,7 +11,7 @@
             />
             <div class="title_name">
                 <br>
-                Hello, I am a <span class="typed"></span>
+                Hello, I am a <span class="typed">Junior Web Developer</span>
             </div>
         </h1>
 
