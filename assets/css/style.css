@@ -172,7 +172,25 @@ body {
 
 .home .image img {
     height: 75vh;
+    border-radius: 20rem;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+    50% {
+        transform: translate(0, 20px);
+    }
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+
 .home h1 {
     display: grid;
     justify-items: self-start;
@@ -575,6 +593,8 @@ li {
     width: 80px;
     margin-right: 10px;
     font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
 }
 
 .certificate-form .button-submit {

@@ -9,7 +9,7 @@
                 src="assets/img/ghost-removebg-preview.png"
                 class="Ghost"
             />
-            <div class="title_name">
+            <div class="title_name" data-aos="zoom-in-down" data-aos-delay="100">
                 <br>
                 Hello, I am a <span class="typed">Junior Web Developer</span>
             </div>
@@ -37,7 +37,7 @@
 
     </div>
 
-    <div class="image">
+    <div data-aos="zoom-in-down" data-aos-delay="100" class="image">
         <img
             src="assets/img/IMG_20221210_204646_494-02-01-removebg.png"
             alt="Profile"

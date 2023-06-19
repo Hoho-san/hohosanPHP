@@ -1,8 +1,6 @@
 <!-- This is main configuration File -->
-<?php
-include("config/conn.php");
+<?php include("config/conn.php"); ?>
 
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,10 +21,13 @@ include("config/conn.php");
     <link rel="stylesheet" href="assets/css/all.css">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+
     <title>Hoho-san</title>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+     
 </head>
 
 <body>

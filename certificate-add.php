@@ -58,18 +58,19 @@ if ($valid == 1) {
 ?>
 
 
-<div id="particles-js"></div>
-<section  class="content">
- 
+
+<section data-aos="zoom-in-up" data-aos-offset="200" class="content">
+ <div id="particles-js"></div>
 	<div class="upload-certificate">
-        <h1 class="certheader" style="padding-bottom: 4rem;"> Add Certificate</h1>    
+        <h1 class="certheader" style="padding-bottom: 4rem;"> Add Certificate</h1>
+        
 	    <div class="form-container">
 		    <form class="certificate-form" action="" method="post" enctype="multipart/form-data">
 			    <div class="form-group">
 				    <div class="input-group">
 					    <label for="title" class="label">Title:</label>
 					    <div class="input-wrapper">
-						    <input type="text" autocomplete="off" class="input" name="title" value="<?php if(isset($_POST['title'])){echo $_POST['title'];} ?>">
+						    <input type="text" placeholder="certificate title" autocomplete="off" class="input" name="title" value="<?php if(isset($_POST['title'])){echo $_POST['title'];} ?>">
 					    </div>
 				    </div>
 			    </div>
@@ -89,11 +90,9 @@ if ($valid == 1) {
 			
 			    <div class="form-group">
 				    <div class="input-group" style="display: flex; justify-content: center;">
-					   
-					        <div class="button-submit" >
-						        <button type="submit" class="submit-button" name="form1">Submit</button>
-					        </div>
-				        
+					    <div class="button-submit" >
+						    <button type="submit" class="submit-button" name="form1">Submit</button>
+					    </div>
 			        </div>
 		        </div>
                 

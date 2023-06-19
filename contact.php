@@ -29,7 +29,7 @@
 
                     $query = "INSERT INTO tbl_subscriber (subs_email, subs_date, subs_date_time, subs_hash) VALUES ('$email', '$current_date', '$current_date_time', '$key')";
                     if ($conn->query($query) === true) {
-                        echo "<script>alert('Subscriber added successfully!!')</script>";
+                        echo "<script>alert('Link saved successfully!!')</script>";
                     } else {
                         echo "Error: " . $query . "<br>" . $conn->error;
                 }
@@ -38,7 +38,7 @@
     }
                     
 ?>
-<section class="home-newsletter">
+<section data-aos="zoom-in-down" data-aos-offset="200" class="home-newsletter">
     <div id="particles-js"></div>
     <div class="container">
         <form action="" method="post">
