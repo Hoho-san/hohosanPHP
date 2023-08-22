@@ -11,7 +11,7 @@
             />
             <div class="title_name" data-aos="zoom-in-down" data-aos-delay="100">
                 <br>
-                Hello, I am a <span class="typed">Junior Web Developer</span>
+                Hello, I am a <span class="typed"></span>
             </div>
         </h1>
 
